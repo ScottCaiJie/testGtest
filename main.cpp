@@ -22,5 +22,6 @@ int main(int agrc, char** argv){
 	std::cout<<"end 1"<<std::endl;
 	std::cout<<"end 2"<<std::endl;
 	std::cout<<"end 3"<<std::endl;
+	std::cout<<"end 4"<<std::endl;
 	return 0;
 }
