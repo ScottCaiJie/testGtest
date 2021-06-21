@@ -19,5 +19,6 @@ int main(int agrc, char** argv){
 	int y = 20;
 	int result = Foo(x,y);
 	std::cout<<result<<std::endl;
+	std::cout<<"end"<<std::endl;
 	return 0;
 }
