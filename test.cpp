@@ -1,6 +1,6 @@
 #include "test.h"
 
-#if 0
+#if 1
 int Foo(int a,int b)
 {
    if(0 == a||0 == b)
@@ -14,7 +14,9 @@ int Foo(int a,int b)
 }
 #endif
 
+#if 0
 int Foo(int a, int b){
 	
 	return a*b;
 }
+#endif

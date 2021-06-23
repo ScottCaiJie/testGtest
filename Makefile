@@ -32,7 +32,7 @@ all: $(OBJS_CPP) $(OBJS_CC) $(OBJS_C)
 	@echo $(OBJS_CPP)
 	@echo $(OBJS_CCC)
 	@echo $(OBJS_C)
-	$(CC) -o $(EXEC) $(OBJS_CPP) $(OBJS_CC) $(OBJS_C)
+	$(CC) -o $(EXEC) $(OBJS_CPP) $(OBJS_CC) $(OBJS_C) $(LIBS)
 
 $(OBJS_CPP):%.o : %.cpp  
 	$(CC) $(CFLAGS)  $< -o $@ 
@@ -44,4 +44,4 @@ $(OBJS_C):%.o : %.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	del  $(OBJS_CPP) $(OBJS_CC) $(OBJS_C) $(EXEC)
+	rm -rf  $(OBJS_CPP) $(OBJS_CC) $(OBJS_C) $(EXEC)
